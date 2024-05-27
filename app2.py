@@ -37,13 +37,13 @@ st.title("Image")
 
 
 # # uploading files
-# st.title('uploading image')
-# img_file = st.file_uploader('upload any image', type=['jpeg', 'png','jpg'])
-# if img_file is not None:
-#     file_details = {'file_name' : img_file.name, 'file_type': img_file.type, 
-#                     'file_size': img_file.size}
-#     st.write(file_details)
-#     st.image(Image.open(img_file))
+st.title('uploading image')
+img_file = st.file_uploader('upload any image', type=['jpeg', 'png','jpg'])
+if img_file is not None:
+    file_details = {'file_name' : img_file.name, 'file_type': img_file.type, 
+                    'file_size': img_file.size}
+    st.write(file_details)
+    st.image(Image.open(img_file))
 
 
 # # st.title('uploading audio')
@@ -55,13 +55,13 @@ st.title("Image")
 # #     st.image(Image.open(img_file))
 
 
-# st.title('uploading video')
-# video_file = st.file_uploader('upload video', type=['mov', 'mp4'])
-# if video_file is not None:
-#     file_details = {'file_name': video_file.name, 'file_type': video_file.type, 
-#                     'file_size': video_file.size}
-#     st.write(file_details)
-#     st.video(video_file)
+st.title('uploading video')
+video_file = st.file_uploader('upload video', type=['mov', 'mp4'])
+if video_file is not None:
+    file_details = {'file_name': video_file.name, 'file_type': video_file.type, 
+                    'file_size': video_file.size}
+    st.write(file_details)
+    st.video(video_file)
 
 
 
